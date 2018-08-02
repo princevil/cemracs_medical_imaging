@@ -6,7 +6,7 @@ addpath('../WaveletBases')
 
 global spazio spazio_im griglia T R Xi Yi Ti Dxi Dyi Li Mass jmax AIbase
 global interp_type cost_function
-global wname maxlev % wavelet to be used for the Besovnorm computation
+global wname maxlev % wavelet to be used for the Besov norm computation
 global hvs
 global besov_q;
 global Nsample Kmi;
@@ -98,7 +98,7 @@ figure(1); clf
 
 
 
-% Inizializzazione dello spazio delle trasformazioni
+% Initialization of the transformation space
 jmax=9;
 disp(['Trasformazione: wavelet interpolanti - nw = ',num2str(nw),' - j0 = ',num2str(j0),...
     ' - J = ',num2str(jwi)]);
