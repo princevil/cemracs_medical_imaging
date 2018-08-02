@@ -1,0 +1,28 @@
+Interpolation : Cubic - nrefine = 3
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt256
+costruito operatore di massa
+Optimization terminated: norm of the current step is less than OPTIONS.TolX.
+
+output = 
+
+       iterations: 93
+        funcCount: 94
+     cgiterations: 370
+    firstorderopt: 0.0045
+        algorithm: 'large-scale: trust-region Newton'
+          message: 'Optimization terminated: norm of the current step is less than OPTIONS.TolX.'
+
+CPU-time: 10253.1719
+Costo least square = 0.00016192
+Costo least square normalizzato = 0.00016192
+Costo SSIM (p=1) = 0.017082
+Costo SSIM (p=1.01) = 0.017098
+Costo SSIM (p=1.5) = 0.016814
+Costo SSIM (p=2) = 0.016789
+Costo SSIM (p=3) = 0.016786
+Costo SSIM (p=10) = 0.016786
+Costo HVS = 0.00012375
+Costo Besov = 0.017995
+Costo MI = -2.5877

@@ -1,0 +1,126 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : LS
+warning: addpath: \Users\Silvia\Dropbox\bspline_tools_1_2\: No such file or directory
+warning: called from
+    DebugOctave at line 86 column 1
+warning: addpath: C: No such file or directory
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+Immagine = africasculpt64
+costruito operatore di massa
+error: Invalid call to fminunc.  Correct usage is:
+
+ -- Function File: fminunc (FCN, X0)
+ -- Function File: fminunc (FCN, X0, OPTIONS)
+ -- Function File: [X, FVAL, INFO, OUTPUT, GRAD, HESS] = fminunc (FCN,
+          ...)
+error: called from
+    print_usage at line 90 column 5
+    fminunc at line 109 column 5
+    DebugOctave at line 295 column 2
+>> [a1, fval,exitflag, output, grad, hess] ...
+
+error: 'a1' undefined near line 1 column 2
+>>  = fminunc(@costo,a0,'GradObj','on','MaxIter',10,...
+parse error:
+
+  syntax error
+
+>>>  = fminunc(@costo,a0,'GradObj','on','MaxIter',10,...
+     ^
+
+>> 
+>> fminunc(@costo,a0,'GradObj','on',...
+
+ 'MaxIter',10,'TolX',1.e-6,'TolFun',1.e-6);
+error: Invalid call to fminunc.  Correct usage is:
+
+ -- Function File: fminunc (FCN, X0)
+ -- Function File: fminunc (FCN, X0, OPTIONS)
+ -- Function File: [X, FVAL, INFO, OUTPUT, GRAD, HESS] = fminunc (FCN,
+          ...)
+
+Additional help for built-in functions and operators is
+available in the online version of the manual.  Use the command
+'doc <topic>' to search the manual index.
+
+Help and information about Octave is also available on the WWW
+at http://www.octave.org and via the help@octave.org
+mailing list.
+>> fminunc(@costo,a0,'GradObj','on',..
+parse error:
+
+  syntax error
+
+>>> fminunc(@costo,a0,'GradObj','on',..
+                                     ^
+
+>> 
+>> opt = options('GradObj','on','MaxIter',10,'TolX',1.e-6,'TolFun',1.e-6)
+error: 'options' undefined near line 1 column 7
+>> options = optimset('GradObj', 'on', 'MaxIter', 400, 'OutputFcn',@showJ_history);
+error: @showJ_history: no function and no method found
+error: evaluating argument list element number 6
+>> options = optimset('GradObj', 'on', 'MaxIter', 4);
+>> edit showJ_history.m
+>> opt = optimset('GradObj','on','MaxIter',10,'TolX',1.e-6,'TolFun',1.e-6)
+opt =
+
+  scalar structure containing the fields:
+
+    GradObj = on
+    MaxIter =  10
+    TolX =    1.0000e-06
+    TolFun =    1.0000e-06
+
+>> [a1, fval,exitflag, output, grad, hess] = fminunc(@costo,a0,opt);
+>> opt = optimset('GradObj','on','MaxIter',10,'TolX',1.e-6,'TolFun',1.e-6,...
+
+                'OutputFcn', @showJ_history)
+opt =
+
+  scalar structure containing the fields:
+
+    GradObj = on
+    MaxIter =  10
+    TolX =    1.0000e-06
+    TolFun =    1.0000e-06
+    OutputFcn = @showJ_history
+
+>> 
+>>  [a1, fval,exitflag, output, grad, hess] = fminunc(@costo,a0,opt);
+>> DebugOctave
+stringa = 20180718T154237

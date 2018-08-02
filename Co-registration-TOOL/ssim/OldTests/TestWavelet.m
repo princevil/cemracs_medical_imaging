@@ -1,0 +1,97 @@
+clear all
+global spazio spazio_im griglia R Xi Yi Ti Li Mass jmax AIbase
+
+%jmax: risoluzione con cui si valuta PHI
+
+jmax=10;
+
+base=start(1,9);
+AIbase=AIstart(4,jmax);
+
+j = 7; 
+griglia = quadgrid(j); % "pixel"
+
+R = reference(griglia.x,griglia.y);
+T = template(griglia.x,griglia.y,0);
+
+h = 1/2.^j;
+
+xt=(h/2:h:1-h/2);
+yt=(h/2:h:1-h/2);
+
+
+% dati per l'interpolazione
+[Xi,Yi]=meshgrid(xt,yt);
+
+Li = griddata(griglia.x,griglia.y,(1:griglia.npoints)',Xi,Yi);
+Ti = vector2matrix(T,Li);
+
+
+
+
+
+spazio_im = uniformAIspace2d(j);
+
+
+figure(1)
+subplot(2,2,1); plot2d(R,griglia);view(2);title('Reference image');
+
+spazio = uniform2d(0,0); % "trasformazioni"
+
+Mass = operator2d(spazio,griglia,[1 0 0;0 0 0;0 0 0],base);
+
+disp('costruito operatore di massa');
+
+% th=.3;
+% a0 = [0; cos(th)-1; -sin(th); cos(th)-1-sin(th);...
+%   -.2; sin(th)-.2;cos(th)-1.2; sin(th)+cos(th)-1.2] +.1*rand(8,1);
+a0 = zeros(2*spazio.npoints,1);
+
+figure(1)
+subplot(2,2,2); plot2d(T,griglia);view(2);title('Template image');
+
+% figure(2)
+% options=optimset('GradObj','off','MaxFunEvals',300,'DerivativeCheck','on',...
+%      'TolFun',1.e-5,'TolX',1.e-3,'DiffMinChange',1.e-4,'PlotFcns',@optimplotfval,...
+%      'LargeScale','off');
+% % % options=optimset('GradObj','off','MaxFunEvals',1000,'DerivativeCheck','on')
+%  [a1,fval,exitflag,output,grad] = fminunc(@costo,a0,options);
+ 
+% grad 
+ 
+%  T1 = deforma(a1,griglia);
+%  figure(1)
+%  subplot(2,2,3); plot2d(T1,griglia);view(2);title('Optimization with FD gradient');
+a1 = a0;
+
+options=optimset('GradObj','on','MaxFunEvals',300,'DerivativeCheck','off',...
+    'TolFun',1.e-6,'TolX',1.e-6,'DiffMinChange',1.e-5,'Display','iter',...
+    'PlotFcns',@optimplotfval,'LargeScale','on');
+a2 = fminunc(@costo,a1,options);
+T2 = deforma(a2,griglia);
+figure(1)
+subplot(2,2,4); plot2d(T2,griglia);view(2);title('Optimization with user gradient');
+a2
+
+% %Versione multiscala weak
+% 
+% disp('inizia versione multiscala')
+% spazio = uniform2d(0,0);
+% a0 = zeros(2*spazio.npoints,1);
+% Mass = operator2d(spazio,griglia,[1 0 0;0 0 0;0 0 0],base);
+% options=optimset('GradObj','off','MaxFunEvals',1000,'DerivativeCheck','off',...
+%     'TolFun',1.e-10,'TolX',1.e-10,'LargeScale','off')
+% % options=optimset('GradObj','off','MaxFunEvals',1000,'DerivativeCheck','on')
+% a3 = fminunc(@costo,a0,options);
+% disp('fine step 1')
+% 
+% spazio = uniform2d(0,1);
+% a0 = zeros(2*spazio.npoints,1);
+% a0(1:8)=a3;
+% Mass = operator2d(spazio,griglia,[1 0 0;0 0 0;0 0 0],base);
+% options=optimset('GradObj','off','MaxFunEvals',1000,'DerivativeCheck','off',...
+%     'TolFun',1.e-10,'TolX',1.e-10,'LargeScale','off')
+% % options=optimset('GradObj','off','MaxFunEvals',1000,'DerivativeCheck','on')
+% a4 = fminunc(@costo,a0,options);
+% T3  = deforma(a2,griglia);
+% 

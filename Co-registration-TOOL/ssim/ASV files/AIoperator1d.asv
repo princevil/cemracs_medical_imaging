@@ -1,0 +1,21 @@
+function [M,D]=operator1d(spazio,grid,base)
+
+ndof=spazio.nfun;
+ntest = grid.npoints;
+S=zeros(ntest,ndof);
+D=zeros(ntest,ndof);
+
+points=[grid.j grid.k];
+
+for i=1:ndof,
+	
+    m=grid.j(i); k=grid.k(i);
+    
+	column=AIbuildcol(m,k,0,points,base);
+	
+	S(:,i)=column(:,1);
+    D(:,i)=column(:,2);
+	
+end
+
+end

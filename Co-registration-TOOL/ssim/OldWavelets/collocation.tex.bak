@@ -1,0 +1,140 @@
+% ----------------------------------------------------------------
+% AMS-LaTeX Paper ************************************************
+% **** -----------------------------------------------------------
+\documentclass{amsart}
+\usepackage{graphicx}
+% ----------------------------------------------------------------
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+% THEOREMS -------------------------------------------------------
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+% MATH -----------------------------------------------------------
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\Real}{\mathbb R}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\To}{\longrightarrow}
+\newcommand{\BX}{\mathbf{B}(X)}
+\newcommand{\A}{\mathcal{A}}
+% ----------------------------------------------------------------
+\begin{document}
+
+\title{Funzioni MATLAB\copyright\ per le wavelet interpolanti}%
+\author{Silvia Bertoluzza}%
+%\address{}%
+\email{silvia.bertoluzza@imati.cnr.it}%
+
+\maketitle
+% ----------------------------------------------------------------
+\section{Framework}
+
+Le wavelet interpolanti simmetriche hanno l'equazione di dilatazione che pu\`o essere scritta nella forma seguente:
+\[ \theta(x) = \theta(2x) + \sum_{k=1}^N a_k (\theta(2x - 2k - 1) + \theta(2x + 2k + 1) ). \]
+Sono costruite come autocorrelazione delle funzioni scala $\varphi$ di Daubechies. I coefficienti $a_k$ verificano la relazione:
+
+\section{Strutture dati}
+
+\subsection*{\tt base} \`E una struttura che include tutti i dati che servono per descrivere e manipolare una base di ondine interpolanti:
+
+\begin{itemize}
+  \item {\tt base.a}: il filtro che compare nell'equazione di dilatazione per la funzione $\theta$;
+  \item {\tt base.J}: il livello di raffinamento usato per costruire i vettori dei valori della funzione theta e delle sue derivate;
+  \item {\tt base.L}: $\textrm{supp}(\theta)=[-L,L]$;
+  \item {\tt base.P}: grado dei polinomi riproducibili esattamente
+  \item {\tt base.J0}: $J_0 = \lceil \log_2(L)\rceil$ \`e il livello minimo richiesto dalle modifiche di bordo
+  \item {\tt base.THETA}: matrice le cui colonne contengono i valori nei punti diadici della funzione $\theta$ e delle sue derivate prima e seconda.
+\end{itemize}
+
+\subsection*{\tt grid} \`E una struttura dati che descrive un'insieme di punti diadici. In dimensione due abbiamo
+\begin{itemize}
+    \item {\tt grid.j0}: livello coarse della griglia (scalare)
+    \item {\tt grid.npoints}: numero di punti
+    \item {\tt grid.j}: $(x,y)=2^{-j}(k_x,k_y) \rightarrow j$
+    \item {\tt grid.kx}: $(x,y)=2^{-j}(k_x,k_y) \rightarrow k_x$
+    \item {\tt grid.ky}: $(x,y)=2^{-j}(k_x,k_y) \rightarrow k_y$
+    \item {\tt grid.x}: $(x,y)=2^{-j}(k_x,k_y) \rightarrow x$
+    \item {\tt grid.y}: $(x,y)=2^{-j}(k_x,k_y) \rightarrow y$
+    \item {\tt grid.b}: $1$ if the point is on the boundary, $0$ otherwise. NB. It could be used to distinguish different boundary portions.
+\end{itemize}
+\begin{rem}(Nota $\times$ me) non c'\`e per ora il tipo, perch\'e ho usato solo le funzioni di tipo 2)\end{rem}
+\begin{rem} a meno che $j=j_0$, la coppia $(k_x,k_y)$ non pu\`o essere formata da due numeri pari. \end{rem}
+\begin{rem} Grazie alla corrispondenza tra punti e funzioni, la struttura {\tt grid} viene usata anche per rappresentare lo spazio discreto generato dalle funzioni corrispondenti ai punti.
+
+\section{Funzioni}
+
+\subsection*{\tt start} Dato {\tt nw} (indicativo della wavelet di Daubechies di partenza) ed un livello massimo {\tt J} costruisce una struttura {\tt base}. Uso:
+
+\
+
+{\tt base = start(nw,J)}\leftrightarrow
+
+\
+
+Remark: {\tt nw} $>$ ? $ \Rightarrow \theta \in C^2$,  {\tt nw} $>$ ?  $ \Rightarrow \theta \in C^2$,  {\tt nw} $>$ ? $ \Rightarrow \theta \in C^2$
+
+
+\subsection*{\tt uniform2d} Costruisce una struttura di tipo {\tt grid} corrispondente ad una griglia uniforme di passo $2^{-j_{max}}$. La griglia \`e organizzata in scale multiple, con livello coarse $= 2^{-J_0}$. Uso:
+
+\
+
+{\tt >> grid=uniform2d(j0,jmax) }
+
+\
+
+\begin{rem} di solito si usa $j_0$ = {\tt base.J0}. \end{rem}
+
+
+\subsection*{\tt operator2d} Costruisce la matrice di rigidita' ottenuta tramite metodo di collocazione usando lo spazio generato dalle funzioni di {\tt space} (struttura di tipo grid) e collocando nei punti della griglia {\tt grid} per un operatore di tipo
+\[
+Au = \sum_{i=0}^{2} \sum_{j=0}^{2-i} c_{i,j} \partial_x^i \partial_y^j u
+\]
+I coefficienti $c_{i,j}$ sono passati tramite una matrice $2\times 2$ {\tt coefs}: {\tt coefs(i+1,j+1)}$=c_{i,j}$
+\begin{rem}
+Esempi di matrici per operatori particolari:
+
+\[
+ u \leftrightarrow
+\left(
+  \begin{array}{ccc}
+    1 & 0 & 0 \\
+    0 & 0 & 0 \\
+    0 & 0 & 0 \\
+  \end{array}
+\right)
+\]
+\[
+-\triangle u \leftrightarrow \left(
+  \begin{array}{ccc}
+    0 & 0 & -1 \\
+    0 & 0 & 0 \\
+    -1 & 0 & 0 \\
+  \end{array}
+\right)
+\]
+\[
+\beta_x u_x + \beta_y u_y \leftrightarrow \left(
+  \begin{array}{ccc}
+    0 & \beta_x & 0 \\
+    \beta_y & 0 & 0 \\
+    0 & 0 & 0 \\
+  \end{array}
+\right)
+\]
+
+\end{rem}
+
+
+% ----------------------------------------------------------------
+%\bibliographystyle{amsplain}
+%\bibliography{}
+\end{document}
+% ----------------------------------------------------------------

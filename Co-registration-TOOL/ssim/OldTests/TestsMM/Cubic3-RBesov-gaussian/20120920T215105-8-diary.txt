@@ -1,0 +1,38 @@
+Interpolation : Cubic - nrefine = 3
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt256
+costruito operatore di massa
+{??? Operation terminated by user during ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\costoRBesov.m',78,0)">costoRBesov at 78</a>
+
+In ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\costo.m',7,0)">costo at 7</a>
+        [J,DJ,HJ] = costoRBesov(a);
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\optim\optim\private\lineSearch.m',228,0)">lineSearch>sectioningPhase at 228</a>
+            [f_alpha,grad] = feval(funfcn{3},reshape(xInitial(:)+alpha*dir(:),xRows,xCols),varargin{:});
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\optim\optim\private\lineSearch.m',57,0)">lineSearch at 57</a>
+    [alpha,f_alpha,fPrime_alpha,grad,exitflag,funcCount] = sectioningPhase(funfcn, ...
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\optim\optim\private\fminusub.m',209,0)">fminusub at 209</a>
+    [alpha,f,gPlusTimesDir,grad,exitflagLnSrch,funcCountLnSrch] = ...
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\optim\optim\fminunc.m',374,0)">fminunc at 374</a>
+   [x,FVAL,GRAD,HESSIAN,EXITFLAG,OUTPUT] = fminusub(funfcn,x,verbosity, ...
+
+In ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\TestQNTR2.m',272,0)">TestQNTR2 at 272</a>
+ [a1,fval,exitflag,outputQN] = fminunc(@costo,a0,options);
+} 
+TestQNTR2
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\TestQNTR2.m',63,1)">TestQNTR2 at 63</a>
+
+stringa =
+
+20120920T215359
+

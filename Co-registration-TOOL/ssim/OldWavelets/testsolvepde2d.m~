@@ -1,0 +1,24 @@
+global a THETA J L P J0
+
+start(3,6);
+
+grid=uniform2d(J0,6);
+
+
+alpha=0.0001;
+mass=operator2d(grid,[1 0 0; 0 0 0; 0 0 0]);
+stiff=operator2d(grid,[0 1 -alpha; 1 0 0; -alpha 0 0]);
+
+[ndof,junk]=size(grid);
+
+f=ones(ndof,1);
+
+[stiff,f]=appendbc2d(stiff,mass,f,grid);
+
+v=stiff\f;
+
+y=mass*v;
+
+plot2d(y,grid);
+
+

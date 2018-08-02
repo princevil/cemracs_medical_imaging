@@ -1,0 +1,17 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : LS
+Trasformazione: wavelet interpolanti - nw = 1 - j0 = 1 - J = 3
+Immagine = africasculpt128
+costruito operatore di massa
+Optimization terminated: relative function value changing by less than OPTIONS.TolFun.
+
+output = 
+
+       iterations: 46
+        funcCount: 47
+     cgiterations: 213
+    firstorderopt: 8.4152e-004
+        algorithm: 'large-scale: trust-region Newton'
+          message: 'Optimization terminated: relative function value changing by less than OPTIONS.TolFun.'
+
+CPU-time: 1373.7656

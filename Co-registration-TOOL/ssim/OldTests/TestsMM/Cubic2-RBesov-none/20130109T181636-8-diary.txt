@@ -1,0 +1,46 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt256
+costruito operatore di massa
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_possible','CSHelpWindow');">Local minimum possible</a>.
+
+fminunc stopped because it cannot decrease the objective function
+along the current <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'search_direction','CSHelpWindow');">search direction</a>.
+
+<<a href = "matlab: createExitMsg('fminusub',5.000000e+00,true,true,'fminunc',0.000000e+00,'',0.000000e+00,0.000000e+00,'',0.000000e+00,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_possible','CSHelpWindow');">Local minimum possible</a>.
+
+fminunc stopped because the final change in function value relative to 
+its initial value is less than the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'function_tolerance','CSHelpWindow');">function tolerance</a>.
+
+<<a href = "matlab: createExitMsg('sfminle',3.000000e+00,true,true,'fminunc',6.135982e-07,'selected',1.000000e-06,0.000000e+00,'',0.000000e+00,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Quasi Newton:
+
+outputQN = 
+
+       iterations: 112
+        funcCount: 189
+         stepsize: 1
+    firstorderopt: 0.0236
+        algorithm: 'medium-scale: Quasi-Newton line search'
+          message: [1x362 char]
+
+Trust Region
+
+outputTR = 
+
+         iterations: 46
+          funcCount: 47
+       cgiterations: 255
+      firstorderopt: 0.0019
+          algorithm: 'large-scale: trust-region Newton'
+            message: [1x473 char]
+    constrviolation: []
+
+Percentuale QN - TR = 0.071586 - 0.92841
+CPU-time: 3993.8596

@@ -1,0 +1,32 @@
+function base=AIstart(D,J)
+
+base.type = 'AI';
+base.D = D;
+base.J = J;
+
+switch D
+    case 2
+h = [-1/8;1/8;1;1;1/8;-1/8];
+    case 4
+h = [3/128;-3/128;-11/64;11/64;1;1;11/64;-11/64;-3/128;3/128];
+    case 6
+h = [-5/1024;5/1024;44/1024;-44/1024;-201/1024;201/1024;1;1;201/1024;...
+    -201/1024;-44/1024;44/1024;5/1024;-5/1024];
+    case 8
+h = MakeAIFilter(8);
+    otherwise
+        disp('Invalid D - setting D = 2');
+        D=2; h = [-1/8;1/8;1;1;1/8;-1/8];
+end
+
+base.h = h;
+
+J0=ceil(log2(D));
+
+if(J<J0), J=J0; end; 
+
+PHI=[AIrefine(base,J) AIderivative(base.J)];
+
+base.PHI = PHI;
+base.P=D;
+base.J0=J0;

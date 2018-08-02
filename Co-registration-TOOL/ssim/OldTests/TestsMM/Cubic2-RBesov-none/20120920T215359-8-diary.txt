@@ -1,0 +1,32 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt256
+costruito operatore di massa
+Optimization cannot make further progress:
+ relative change in x less than options.TolX.
+Optimization terminated: relative function value changing by less than OPTIONS.TolFun.
+Quasi Newton:
+
+outputQN = 
+
+       iterations: 110
+        funcCount: 160
+         stepsize: 0.2729
+    firstorderopt: 0.0221
+        algorithm: 'medium-scale: Quasi-Newton line search'
+          message: [1x88 char]
+
+Trust Region
+
+outputTR = 
+
+       iterations: 21
+        funcCount: 22
+     cgiterations: 171
+    firstorderopt: 0.0052
+        algorithm: 'large-scale: trust-region Newton'
+          message: 'Optimization terminated: relative function value changing by less than OPTIONS.TolFun.'
+
+Percentuale QN - TR = 0.14935 - 0.85065
+CPU-time: 2171.5469

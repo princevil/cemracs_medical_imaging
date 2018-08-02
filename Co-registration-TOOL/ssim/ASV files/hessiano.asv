@@ -1,0 +1,36 @@
+function hessTa = hessiano(a,griglia)
+gradTa = zeros(griglia.npoints,2);
+
+[hatx,haty
+
+N = max(size(a));
+Dphi = zeros(griglia.npoints,N,N);
+D2phi = zeros(griglia.npoints,N,N,2);
+Dphi(:,1,1)=ones(griglia.npoints,1);
+Dphi(:,2,2)=ones(griglia.npoints,1);
+% D2phi = zeros(N,N,2);
+
+
+
+
+% Dphi(i,k)=D(phi^k)/Dai
+%        Dphi1/Da1 Dphi2/Da2];
+% D2phi(i,j,k)=D(phi^k)/DaiDaj;
+
+% NB. in questo caso, Dphi e' costante in x e y - Se no bisogna metterci un
+% terzo indice che identifica il punto della griglia.
+
+[Tx,Ty]=DT(hatx,haty);
+[Txx,Tyy,Txy]=D2T(hatx,haty);
+
+hessTa = zeros(griglia.npoints,N,N);
+
+for i=1:N
+    for j=1:N
+        hessTa(:,j,i) = (Txx.*Dphi(:,j,1)+Txy.*Dphi(:,j,2)).*Dphi(:,i,1)+ ...
+         (Txy.*Dphi(:,j,1)+Tyy.*Dphi(:,j,2)).*Dphi(:,i,2) + ...
+         Tx.*D2phi(:,i,j,1) + Ty.*D2phi(:,i,j,2);
+    end
+end
+
+%gradTa = [Tx,Ty]*Dphi;

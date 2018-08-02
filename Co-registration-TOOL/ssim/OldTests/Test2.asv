@@ -1,0 +1,25 @@
+global griglia R
+griglia = uniform2d(5,5);
+R = reference(griglia.x,griglia.y);
+
+a0 = [2.1;.1;0;0;0.9;0];
+
+disp(['GradObj','on','LargeScale','off']);
+options=optimset('GradObj','on','LargeScale','off','TolX',1.e-15);
+fminunc(@costo,a0,options);
+ans
+
+disp(['GradObj','off','LargeScale','off']);
+options=optimset('GradObj','off','LargeScale','off','TolX',1.e-15);
+fminunc(@costo,a0,options);
+ans
+
+disp(['GradObj','on','LargeScale','on']);
+options=optimset('GradObj','on','LargeScale','on','TolX',1.e-15);
+fminunc(@costo,a0,options);
+ans
+
+disp(['GradObj','on','Hessian','on','LargeScale','on']);
+options=optimset('GradObj','on','Hessian','on','LargeScale','on','TolX',1.e-15);
+fminunc(@costo,a0,options);
+ans

@@ -1,0 +1,126 @@
+Interpolation : AI - nrefine = 5
+Cost function : LS
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt64
+costruito operatore di massa
+Function derivative
+Maximum relative discrepancy between derivatives = 0.000111905
+Caution: user-supplied and finite-difference derivatives do
+ not match within 1e-006 relative tolerance.
+Maximum difference occurs in element (13,1):
+  User-supplied derivative, costo:     0.0115181
+  Finite-difference derivative:     0.0114062
+Strike any key to continue or Ctrl-C to abort
+ 
+{??? Operation terminated by user during ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\matlab\elmat\repmat.m',87,0)">repmat at 87</a>
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\matlab\polyfun\interp2.m',153,0)">interp2 at 153</a>
+if (size(x,2)>1 && ~isequal(repmat(xx,size(x,1),1),x)) || ...
+
+In ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\gradiente.m',138,0)">gradiente at 138</a>
+Ty = interp2(Xi,Yi,Dyi,hatx,haty,'cubic');
+
+In ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\costoLS.m',7,0)">costoLS at 7</a>
+gradTa = gradiente(a,griglia);
+
+In ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\costo.m',33,0)">costo at 33</a>
+[J,DJ,HJ]=costoLS(a);
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\optim\optim\sfd.m',50,0)">sfd at 50</a>
+        [dummy,v(:)] = feval(funfcn{3},x,varargin{:});
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\optim\optim\sfminbx.m',165,0)">sfminbx at 165</a>
+    H = sfd(x,g,Hstr,group,[],DiffMinChange,DiffMaxChange,funfcn,varargin{:});
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\optim\optim\fminunc.m',377,0)">fminunc at 377</a>
+   [x,FVAL,LAMBDA,EXITFLAG,OUTPUT,GRAD,HESSIAN] = sfminbx(funfcn,x,l,u, ...
+
+In ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\NewTest.m',276,0)">NewTest at 276</a>
+ [a1,fval,exitflag,outputTR] = fminunc(@costo,a0,options);
+} 
+builtin('cd','..');
+builtin('cd','C:\Users\Silvia\Dropbox\interpolation');
+uiopen('C:\Users\Silvia\Dropbox\interpolation\Test1.m',1)
+uiopen('C:\Users\Silvia\Dropbox\interpolation\Test1.m',1)
+uiopen('C:\Users\Silvia\Dropbox\interpolation\Test2.m',1)
+uiopen('C:\Users\Silvia\Dropbox\interpolation\costoBesov.m',1)
+uiopen('C:\Users\Silvia\Dropbox\interpolation\TestWavelet.m',1)
+TestWavelet
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+costruito operatore di massa
+Inizializzazione terminata
+Maximum relative discrepancy between derivatives = 5.67573e-009
+Maximum number of function evaluations exceeded;
+ increase options.MaxFunEvals
+uiopen('C:\Users\Silvia\Dropbox\interpolation\extrapolate.m',1)
+uiopen('C:\Users\Silvia\Dropbox\interpolation\buildcol.m',1)
+uiopen('C:\Users\Silvia\Dropbox\interpolation\operator.m~',1)
+uiopen('C:\Users\Silvia\Dropbox\interpolation\appendbd.txt',1)
+uiopen('C:\Users\Silvia\Dropbox\interpolation\operator2d.m',1)
+TestWavelet
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+costruito operatore di massa
+Inizializzazione terminata
+Maximum relative discrepancy between derivatives = 5.67573e-009
+Maximum number of function evaluations exceeded;
+ increase options.MaxFunEvals
+uiopen('C:\Users\Silvia\Dropbox\interpolation\GaussNewtonTest1.m',1)
+uiopen('C:\Users\Silvia\Dropbox\interpolation\Test2.m',1)
+uiopen('C:\Users\Silvia\Dropbox\interpolation\uniform2d.asv',1)
+TestWavelet
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+costruito operatore di massa
+Inizializzazione terminata
+Maximum relative discrepancy between derivatives = 5.67573e-009
+Maximum number of function evaluations exceeded;
+ increase options.MaxFunEvals
+TestWavelet
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+costruito operatore di massa
+Inizializzazione terminata
+Maximum relative discrepancy between derivatives = 5.67573e-009
+Maximum number of function evaluations exceeded;
+ increase options.MaxFunEvals
+TestWavelet
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+costruito operatore di massa
+Inizializzazione terminata
+Maximum relative discrepancy between derivatives = 5.67573e-009
+Maximum number of function evaluations exceeded;
+ increase options.MaxFunEvals
+TestWavelet
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+costruito operatore di massa
+Inizializzazione terminata
+Maximum relative discrepancy between derivatives = 5.73397e-007
+Maximum number of function evaluations exceeded;
+ increase options.MaxFunEvals
+dbclear ('C:\Users\Silvia\Dropbox\interpolation\TestWavelet.m', '38')
+EXIT
+{??? Undefined function or variable 'EXIT'.
+} 
+exit

@@ -1,0 +1,13 @@
+load "gmsh"
+
+mesh Th = gmshload("atlas_lower.msh");
+plot(Th);
+
+fespace Vh(Th, P1);
+Vh u,v;
+
+problem poisson(u, v) = int2d(Th)(dx(u)*dx(v) + dy(u)*dy(v)) -
+	int2d(Th)(v) + on(1, u = 0.);
+
+poisson;
+plot(u, fill = 1, value = 1);

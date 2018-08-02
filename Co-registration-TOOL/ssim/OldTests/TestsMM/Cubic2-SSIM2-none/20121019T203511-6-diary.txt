@@ -1,0 +1,35 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : SSIM2
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt64
+costruito operatore di massa
+Function derivative
+Maximum relative discrepancy between derivatives = 0.000351219
+Caution: user-supplied and finite-difference derivatives do
+ not match within 1e-006 relative tolerance.
+Maximum difference occurs in element (13,1):
+  User-supplied derivative, costo:     0.0342227
+  Finite-difference derivative:     0.0338715
+Strike any key to continue or Ctrl-C to abort
+{??? Operation terminated by user during ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\shared\optimlib\graderr.m',41,0)">graderr at 41</a>
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\optim\optim\sfminbx.m',140,0)">sfminbx at 140</a>
+        graderr(gf, initialGRAD, funfcn{4});
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\optim\optim\fminunc.m',377,0)">fminunc at 377</a>
+   [x,FVAL,LAMBDA,EXITFLAG,OUTPUT,GRAD,HESSIAN] = sfminbx(funfcn,x,l,u, ...
+
+In ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\NewTest.m',276,0)">NewTest at 276</a>
+ [a1,fval,exitflag,outputTR] = fminunc(@costo,a0,options);
+} 
+NewTest
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+stringa =
+
+20121019T203541
+

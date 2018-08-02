@@ -1,0 +1,117 @@
+20120918T231309-6-diary.txt
+
+Interpolation : AI - nrefine = 2
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt64
+costruito operatore di massa
+Optimization terminated: relative function value changing by less than OPTIONS.TolFun.
+
+output = 
+
+       iterations: 42
+        funcCount: 43
+     cgiterations: 228
+    firstorderopt: 1.3448e-004
+        algorithm: 'large-scale: trust-region Newton'
+          message: 'Optimization terminated: relative function value changing by less than OPTIONS.TolFun.'
+
+CPU-time: 299.2813
+Costo least square = 0.00029299
+Costo least square normalizzato = 0.00029299
+Costo SSIM (p=1) = 0.024805
+Costo SSIM (p=1.01) = 0.024882
+Costo SSIM (p=1.5) = 0.023014
+Costo SSIM (p=2) = 0.022626
+Costo SSIM (p=3) = 0.022509
+Costo SSIM (p=10) = 0.0225
+Costo HVS = 0.00019406
+Costo Besov = 0.024175
+Costo MI = -2.601
+
+
+20120918T231839-7-diary.txt
+
+Interpolation : AI - nrefine = 2
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt128
+costruito operatore di massa
+Optimization terminated: relative function value changing by less than OPTIONS.TolFun.
+
+output = 
+
+       iterations: 20
+        funcCount: 21
+     cgiterations: 205
+    firstorderopt: 1.9029e-004
+        algorithm: 'large-scale: trust-region Newton'
+          message: 'Optimization terminated: relative function value changing by less than OPTIONS.TolFun.'
+
+CPU-time: 312.2344
+Costo least square = 0.00038208
+Costo least square normalizzato = 0.00038208
+Costo SSIM (p=1) = 0.027616
+Costo SSIM (p=1.01) = 0.027685
+Costo SSIM (p=1.5) = 0.026097
+Costo SSIM (p=2) = 0.025816
+Costo SSIM (p=3) = 0.025747
+Costo SSIM (p=10) = 0.025743
+Costo HVS = 0.00028246
+Costo Besov = 0.027625
+Costo MI = -2.5523
+
+
+20120918T232404-8-diary.txt
+
+Interpolation : AI - nrefine = 2
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt256
+costruito operatore di massa
+Optimization terminated: norm of the current step is less than OPTIONS.TolX.
+
+output = 
+
+       iterations: 35
+        funcCount: 36
+     cgiterations: 231
+    firstorderopt: 4.1058e-004
+        algorithm: 'large-scale: trust-region Newton'
+          message: 'Optimization terminated: norm of the current step is less than OPTIONS.TolX.'
+
+CPU-time: 3084.5781
+Costo least square = 0.0002464
+Costo least square normalizzato = 0.0002464
+Costo SSIM (p=1) = 0.020902
+Costo SSIM (p=1.01) = 0.020913
+Costo SSIM (p=1.5) = 0.020711
+Costo SSIM (p=2) = 0.020697
+Costo SSIM (p=3) = 0.020696
+Costo SSIM (p=10) = 0.020696
+Costo HVS = 0.00018712
+Costo Besov = 0.022199
+Costo MI = -2.5706
+
+
+20120920T175626-9-diary.txt
+
+Interpolation : AI - nrefine = 2
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt512
+costruito operatore di massa
+Optimization terminated: norm of the current step is less than OPTIONS.TolX.
+
+output = 
+
+       iterations: 41
+        funcCount: 42
+     cgiterations: 256
+    firstorderopt: 0.0043
+        algorithm: 'large-scale: trust-region Newton'
+          message: 'Optimization terminated: norm of the current step is less than OPTIONS.TolX.'
+
+CPU-time: 11993.5597
+
+

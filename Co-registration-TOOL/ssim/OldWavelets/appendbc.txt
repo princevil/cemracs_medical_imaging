@@ -1,0 +1,8 @@
+function [stiffb,fb]=appendbc(stiff,mass,f,grid);
+
+stiffb=stiff;
+stiffb(grid(:,4),:)=mass(grid(:,4),:);
+fb=f;
+fb(grid(:,4))=0*fb(grid(:,4));
+
+

@@ -1,0 +1,13 @@
+function z = reference(x1,y1)
+
+x1 
+x1 = x1 - floor(x1); y1=y1 - floor(y1);
+% th = .3;
+% x = x1*cos(th) - y1*sin(th); y= y1*cos(th)+x1*sin(th)-.2;
+% z = exp(-(18*x.^2+41*y.^2-40*x.*y+0.8*x-16.2*y+1.69));
+
+th = .4;
+x = x1*cos(th) - y1*sin(th)+.2; y= y1*cos(th)+x1*sin(th)-.2;
+z = 2.5*exp(-(24*x.^2+136*y.^2-52*x.*y+3.2*x-115*y+30));
+
+z = z/5;

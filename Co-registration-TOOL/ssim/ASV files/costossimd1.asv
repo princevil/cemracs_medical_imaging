@@ -1,0 +1,48 @@
+function [J,DJ,HJ] = costo(a)
+global griglia R
+
+%% Costo SSIM d_1
+
+Ta = deforma(a,griglia);
+gradTa = gradiente(a,griglia);
+% hessTa = hessiano(a,griglia);
+h2 = 1/griglia.npoints;
+epsilon = .01;
+
+chi = ones(size(Ta));
+
+Tabar = Ta'*chi*h2;
+Rbar = R'*chi*h2;
+
+HJ
+
+
+denominatore = (Tabar^2+Rbar^2+epsilon);
+J = sqrt((Tabar - Rbar)^2/denominatore);
+
+% J = .5*(Ta-R)'*(Ta-R)/griglia.npoints;
+N=max(size(a)); DJ = zeros(N,1);
+
+for j = 1:N,
+    
+    
+            C = (2*(Tabar-Rbar)*denominatore - 2*(Tabar-Rbar)^2*Tabar)/(denominatore^2);
+            d = gradTa(:,j);
+            DJ(j) = C*chi'*d*h2;
+            DJ(j) = DJ(j)/(2*J);
+       
+%         C1 = (epsilon + 2*Ta'*R*h2)/(denominatore^2);
+%         C2 = 1/denominatore;
+%         DJ(j) =(C1*Ta - C2*R)'*gradTa(:,j)*h2;
+               
+%         for k = 1:N
+%            % Hessiano ridotto
+%            HJ(j,k) = gradTa(:,j)'*gradTa(:,k)/griglia.npoints;
+%             % Vero Hessiano
+%             % HJ(j,k) = gradTa(:,j)'*gradTa(:,k) + (Ta - R)'*hessTa(:,j,k);
+% %         end
+%         end
+
+
+end
+

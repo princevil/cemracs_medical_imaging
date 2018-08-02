@@ -1,0 +1,455 @@
+Tempistiche
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\Tempistiche.m',60,1)">Tempistiche at 60</a>
+
+stringa =
+
+20120829T102944
+
+Interpolation : Cubic - nrefine = 2
+Cost function : MI
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt64
+costruito operatore di massa
+Costo LS = 0.0624
+CPU HVS = 0.0468 (0.75 time the LS CPU
+CPU SSIM = 0.0468 (0.75 time the LS CPU
+CPU Besov = 0.3276 (5.25 time the LS CPU
+CPU MI = 2.106 (33.75 time the LS CPU
+Tempistiche
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\Tempistiche.m',60,1)">Tempistiche at 60</a>
+
+stringa =
+
+20120829T102957
+
+Interpolation : Cubic - nrefine = 2
+Cost function : MI
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt128
+costruito operatore di massa
+Costo LS = 0.1092
+CPU HVS = 0.1092 (1 time the LS CPU
+CPU SSIM = 0.156 (1.4286 time the LS CPU
+CPU Besov = 0.4992 (4.5714 time the LS CPU
+CPU MI = 8.0965 (74.1429 time the LS CPU
+Tempistiche
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+j =
+
+     8
+
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\Tempistiche.m',60,1)">Tempistiche at 60</a>
+
+stringa =
+
+20120829T103030
+
+Interpolation : Cubic - nrefine = 2
+Cost function : MI
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt256
+costruito operatore di massa
+Costo LS = 0.3588
+CPU HVS = 0.312 (0.86957 time the LS CPU
+CPU SSIM = 0.624 (1.7391 time the LS CPU
+CPU Besov = 0.93601 (2.6087 time the LS CPU
+CPU MI = 31.9022 (88.913 time the LS CPU
+Tempistiche
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+j =
+
+     9
+
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\Tempistiche.m',60,1)">Tempistiche at 60</a>
+
+stringa =
+
+20120829T103450
+
+Interpolation : Cubic - nrefine = 2
+Cost function : MI
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt512
+costruito operatore di massa
+Costo LS = 1.6224
+CPU HVS = 1.7472 (1.0769 time the LS CPU
+CPU SSIM = 3.3852 (2.0865 time the LS CPU
+CPU Besov = 4.4616 (2.75 time the LS CPU
+CPU MI = 134.4105 (82.8462 time the LS CPU
+Tempistiche
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+j =
+
+     6
+
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\Tempistiche.m',60,1)">Tempistiche at 60</a>
+
+stringa =
+
+20120829T104052
+
+Interpolation : Cubic - nrefine = 3
+Cost function : MI
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt64
+costruito operatore di massa
+Costo LS = 0.078
+CPU HVS = 0.0468 (0.6 time the LS CPU
+CPU SSIM = 0.078001 (1 time the LS CPU
+CPU Besov = 0.3588 (4.6 time the LS CPU
+CPU MI = 2.0748 (26.6 time the LS CPU
+Tempistiche
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+j =
+
+     7
+
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\Tempistiche.m',60,1)">Tempistiche at 60</a>
+
+stringa =
+
+20120829T104113
+
+Interpolation : Cubic - nrefine = 3
+Cost function : MI
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt128
+costruito operatore di massa
+Costo LS = 0.2184
+CPU HVS = 0.156 (0.71429 time the LS CPU
+CPU SSIM = 0.2964 (1.3571 time the LS CPU
+CPU Besov = 0.546 (2.5 time the LS CPU
+CPU MI = 7.6596 (35.0714 time the LS CPU
+Tempistiche
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+j =
+
+     8
+
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\Tempistiche.m',60,1)">Tempistiche at 60</a>
+
+stringa =
+
+20120829T104202
+
+Interpolation : Cubic - nrefine = 3
+Cost function : MI
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt256
+costruito operatore di massa
+Costo LS = 0.5616
+CPU HVS = 0.5772 (1.0278 time the LS CPU
+CPU SSIM = 1.092 (1.9444 time the LS CPU
+CPU Besov = 1.2012 (2.1389 time the LS CPU
+CPU MI = 32.651 (58.1389 time the LS CPU
+Tempistiche
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+j =
+
+     9
+
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\Tempistiche.m',60,1)">Tempistiche at 60</a>
+
+stringa =
+
+20120829T104327
+
+Interpolation : Cubic - nrefine = 3
+Cost function : MI
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt512
+costruito operatore di massa
+Costo LS = 2.6832
+CPU HVS = 2.9328 (1.093 time the LS CPU
+CPU SSIM = 5.4288 (2.0233 time the LS CPU
+CPU Besov = 4.9764 (1.8547 time the LS CPU
+CPU MI = 138.9969 (51.8023 time the LS CPU
+Tempistiche
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+j =
+
+     6
+
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\Tempistiche.m',60,1)">Tempistiche at 60</a>
+
+stringa =
+
+20120829T104955
+
+Interpolation : AI - nrefine = 2
+Cost function : MI
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt64
+costruito operatore di massa
+Costo LS = 0.093601
+CPU HVS = 0.0624 (0.66667 time the LS CPU
+CPU SSIM = 0.0468 (0.5 time the LS CPU
+CPU Besov = 0.3588 (3.8333 time the LS CPU
+CPU MI = 2.0904 (22.3333 time the LS CPU
+Tempistiche
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+j =
+
+     7
+
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\Tempistiche.m',60,1)">Tempistiche at 60</a>
+
+stringa =
+
+20120829T105014
+
+Interpolation : AI - nrefine = 2
+Cost function : MI
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt128
+costruito operatore di massa
+Costo LS = 0.1248
+CPU HVS = 0.093601 (0.75 time the LS CPU
+CPU SSIM = 0.1404 (1.125 time the LS CPU
+CPU Besov = 0.4836 (3.875 time the LS CPU
+CPU MI = 8.0965 (64.875 time the LS CPU
+Tempistiche
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+j =
+
+     8
+
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\Tempistiche.m',60,1)">Tempistiche at 60</a>
+
+stringa =
+
+20120829T105141
+
+Interpolation : AI - nrefine = 2
+Cost function : MI
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt256
+costruito operatore di massa
+Costo LS = 0.312
+CPU HVS = 0.3744 (1.2 time the LS CPU
+CPU SSIM = 0.5616 (1.8 time the LS CPU
+CPU Besov = 0.98281 (3.15 time the LS CPU
+CPU MI = 31.1222 (99.75 time the LS CPU
+Tempistiche
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+j =
+
+     9
+
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\Tempistiche.m',60,1)">Tempistiche at 60</a>
+
+stringa =
+
+20120829T105415
+
+Interpolation : AI - nrefine = 2
+Cost function : MI
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt512
+costruito operatore di massa
+Costo LS = 1.638
+CPU HVS = 1.8564 (1.1333 time the LS CPU
+CPU SSIM = 3.0108 (1.8381 time the LS CPU
+CPU Besov = 3.822 (2.3333 time the LS CPU
+CPU MI = 130.058 (79.4 time the LS CPU
+Tempistiche
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+j =
+
+     6
+
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\Tempistiche.m',60,1)">Tempistiche at 60</a>
+
+stringa =
+
+20120829T105800
+
+Interpolation : AI - nrefine = 3
+Cost function : MI
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt64
+costruito operatore di massa
+Costo LS = 0.1248
+CPU HVS = 0.0624 (0.5 time the LS CPU
+CPU SSIM = 0.093601 (0.75 time the LS CPU
+CPU Besov = 0.4836 (3.875 time the LS CPU
+CPU MI = 2.5116 (20.125 time the LS CPU
+Tempistiche
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+j =
+
+     7
+
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\Tempistiche.m',60,1)">Tempistiche at 60</a>
+
+stringa =
+
+20120829T105811
+
+Interpolation : AI - nrefine = 3
+Cost function : MI
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt128
+costruito operatore di massa
+Costo LS = 0.2028
+CPU HVS = 0.156 (0.76923 time the LS CPU
+CPU SSIM = 0.3276 (1.6154 time the LS CPU
+CPU Besov = 0.546 (2.6923 time the LS CPU
+CPU MI = 8.5645 (42.2308 time the LS CPU
+Tempistiche
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+j =
+
+     8
+
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\Tempistiche.m',60,1)">Tempistiche at 60</a>
+
+stringa =
+
+20120829T105829
+
+Interpolation : AI - nrefine = 3
+Cost function : MI
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt256
+costruito operatore di massa
+Costo LS = 0.5772
+CPU HVS = 0.5616 (0.97297 time the LS CPU
+CPU SSIM = 1.0608 (1.8378 time the LS CPU
+CPU Besov = 1.2636 (2.1892 time the LS CPU
+CPU MI = 33.4154 (57.8919 time the LS CPU
+Tempistiche
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+j =
+
+     9
+
+{Warning: Directory already exists.} 
+> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\Tempistiche.m',60,1)">Tempistiche at 60</a>
+
+stringa =
+
+20120829T105915
+
+Interpolation : AI - nrefine = 3
+Cost function : MI
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt512
+costruito operatore di massa
+Costo LS = 2.7144
+CPU HVS = 2.9796 (1.0977 time the LS CPU
+CPU SSIM = 5.304 (1.954 time the LS CPU
+CPU Besov = 5.2104 (1.9195 time the LS CPU
+CPU MI = 137.5149 (50.6609 time the LS CPU
+diary off

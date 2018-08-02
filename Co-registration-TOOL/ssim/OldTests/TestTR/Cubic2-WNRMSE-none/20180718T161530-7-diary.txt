@@ -1,0 +1,196 @@
+stringa = 20180718T161530
+Interpolation : Cubic - nrefine = 2
+Cost function : WNRMSE
+warning: addpath: \Users\Silvia\Dropbox\bspline_tools_1_2\: No such file or directory
+warning: called from
+    DebugOctave at line 86 column 1
+warning: addpath: C: No such file or directory
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+Immagine = africasculpt128
+costruito operatore di massa
+cost_function = WNRMSE
+sono in costo wavelet
+error: 'wavedec2' undefined near line 37 column 9
+error: called from
+    costoWNRMSE at line 37 column 8
+    costo at line 9 column 18
+    DebugOctave at line 263 column 4
+>> who
+Variables in the current scope:
+
+AIbase          S               Yi              filename3       jwi             spazio_im
+D               T               Yt              filename4       maxit           startmode
+Dxi             Te              a0              filename5       maxlev          stringa
+Dyi             Tf              ans             griglia         noise_type      wname
+Kmi             Ti              base            h               nome_immagine   xe
+Li              Xe              besov_q         hf              nome_reference  xf
+Mass            Xf              cost_function   hvs             nome_template   xt
+N               Xi              der_control     interp_type     nrefine         ye
+Nsample         Xt              directory       j               nw              yf
+R               Ye              filename1       j0              opt_algorithm   yt
+Rclean          Yf              filename2       jmax            spazio
+
+>> costo(a)
+error: 'a' undefined near line 1 column 7
+error: evaluating argument list element number 1
+>> costo(a0)
+cost_function = WNRMSE
+sono in costo wavelet
+error: 'wavedec2' undefined near line 37 column 9
+error: called from
+    costoWNRMSE at line 37 column 8
+    costo at line 9 column 18
+>> warning: load_path: ../image-2.8.0/inst: No such file or directory
+DebugOctave
+error: 'DebugOctave' undefined near line 1 column 1
+>> ls
+haar_1d.m		haar_test02.m		r8vec_uniform_01.m
+haar_1d_inverse.m	haar_test03.m		sierpinski.png
+haar_2d.m		haar_test_output.txt	sierpinski.txt
+haar_2d_inverse.m	r8mat_print.m		timestamp.m
+haar_test.m		r8mat_print_some.m
+haar_test01.m		r8mat_uniform_01.m
+>> cd ..
+warning: load_path: ../image-2.8.0/inst: No such file or directory
+>> warning: load_path: ../image-2.8.0/inst: No such file or directory
+cd ssim
+>> ls
+20120919T094056-8-data.mat	collocation.log
+AIbuildcol.asv			collocation.tex
+AIbuildcol.m			collocation.tex.bak
+AId2.m				convolution.m
+AIderivative.m			costo.m
+AIoperator1d.asv		costoBesov.asv
+AIoperator1d.m			costoBesov.m
+AIoperator2d.asv		costoHVS.asv
+AIoperator2d.m			costoHVS.m
+AIrefine.asv			costoLM.m
+AIrefine.m			costoLMLS.asv
+AIrestriction.asv		costoLMLS.m
+AIrestriction.m			costoLS.m
+AIstart.asv			costoLSnormalizzato.m
+AIstart.m			costoMI-debug.asv
+Costi-AI2-512.txt		costoMI-debug.m
+Costi-AI3-512.txt		costoMI.asv
+Costi-AI4-256.txt		costoMI.m
+Costi-AI4-512.txt		costoMI2.m
+D2T.m				costoMI3.m
+DT.m				costoMIR.asv
+DebugOctave.m			costoMIR.m
+GaussNewtonTest1.asv		costoMIR2.m
+GaussNewtonTest1.m		costoMIdb.m
+HVStransfer.eps			costoRBesov.m
+Images				costoWNRMSE.m
+Initialize.m			costod2.m
+MutualInfo.m			costossim.asv
+NewTest.m			costossim.m
+NewTest2.m			costossim1.m
+NewTest3.m			costossimd1.asv
+NewTest_b.asv			costossimd1.m
+NewTest_b.m			costossimd2.m
+OldWavelets			deforma.asv
+SteepestDescent.asv		deforma.m
+SteepestDescent.m		deforma.m~
+TRTest.asv			deforma_old.asv
+TRTest.m			deforma_old.m
+Tempistiche.m			disp_deformazione.asv
+Test1.m				disp_deformazione.m
+Test2.asv			divfree-hdiv-stokes-v3.pdf
+Test2.m				evalthetas.txt
+TestAIWavelet.asv		extrapolate.m
+TestAIWavelet.m			filtro.m
+TestBesov.m			gradiente.asv
+TestFunction.asv		gradiente.m
+TestFunction.m			gradphi.asv
+TestML.asv			gradphi.m
+TestML.m			hessiano-old.m
+TestMLRBAI3.asv			hessiano.asv
+TestMLRBAI3.m			hessphi.m
+TestMedicalQNTR.m		hist0.asv
+TestMoon.asv			hist0.m
+TestMoon.m			hist1.m
+TestMoon2.m			matrix2vector.m
+TestQNTR.asv			mi2.m
+TestQNTR2.m			mostra.asv
+TestQNTR2.m~			mostra.m
+TestQNTR3.m			operator.m
+TestTR				operator2d.m
+TestTR.asv			operator2d.m~
+TestTR.m			periodic_gradient.asv
+TestTRO.m			periodic_gradient.m
+TestWMS.asv			phi.asv
+TestWMS.m			phi.m
+TestWavelet.asv			plot2d.asv
+TestWavelet.m			plot2d.m
+TestWaveletImage.asv		plot2d.m~
+TestWaveletImage.m		q
+TestWaveletImage2.m		quadgrid.m
+TestWaveletLM.asv		reference.asv
+TestWaveletLM.m			reference.m
+TestWaveletMS.asv		refine.m
+TestWaveletMS.m			restriction.m
+Test_Besov.asv			restriction.m~
+Test_Besov.m			showJ_history.m
+Test_MI.asv			small-bell-ring-01.wav
+Test_MI.m			start.m
+Tests				start.m~
+TestsMM				tempi
+a1.mat				tempi.txt
+a2				template.asv
+a2.mat				template.m
+a2mi.mat			testbase1d.m
+a3.mat				testbase1d.m~
+ans.ps				testplot2d.m
+appendbc.m			testsolvepde1d.m
+appendbc.txt			testsolvepde2d.m
+appendbc2d.m			testsolvepde2d.m~
+appendbc2d.m~			teststokes.m
+appendbd.txt			teststokes.m~
+applyAIoperator2d.asv		uniform1d.asv
+applyAIoperator2d.m		uniform1d.m
+buildHist1.m			uniform2d.m
+buildcol.m			uniform2d.m~
+buildcol.m~			uniformAIspace1d.m
+butta.m				uniformAIspace2d.asv
+checkb.asv			uniformAIspace2d.m
+checkb.m			uniformspace1d.m
+collocation.aux			valori.m
+collocation.bbl			vector2matrix.asv
+collocation.blg			vector2matrix.m
+collocation.dvi			wavelet.m
+>> DebugOctave
+stringa = 20180718T172734

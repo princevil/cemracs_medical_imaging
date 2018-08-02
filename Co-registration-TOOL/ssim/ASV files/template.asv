@@ -1,0 +1,23 @@
+function z = template(x,y,id)
+% id = indice di derivata
+
+x = x - floor(x); y = y - floor(y);
+
+% g = exp(-(18*x.^2+41*y.^2-40*x.*y+0.8*x-16.2*y+1.69));
+g = 2.5*exp(-(24*x.^2+136*y.^2-52*x.*y+3.2*x-115*y+30));
+
+
+if(id==0)
+    z=g;
+    % z = x.^2 + 3*y.^2;
+% z = 3*x + 2*y +.1;
+else
+    [n,junk]=size(x);
+%    Tx = 3*ones(n,1); Ty = 2*ones(n,1);
+%     Tx =-g.*(36*x-40*y+0.8); Ty = -g.*(82*y-40*x-16.2);
+     Tx =-g.*(48*x-52*y+3.2); Ty = -g.*(272*y-52*x-115);
+     z = [Tx Ty];
+end
+
+z 
+end

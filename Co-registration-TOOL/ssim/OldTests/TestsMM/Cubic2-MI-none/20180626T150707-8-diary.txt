@@ -1,0 +1,36 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : MI
+[Warning: Name is nonexistent or not a directory: C] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m', 88)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m',88,0)">line 88</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('TestQNTR2', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/TestQNTR2.m', 90)" style="font-weight:bold">TestQNTR2</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/TestQNTR2.m',90,0)">line 90</a>)] 
+[Warning: Name is nonexistent or not a directory: \Users\Silvia\Dropbox\bspline_tools_1_2\] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m', 88)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m',88,0)">line 88</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('TestQNTR2', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/TestQNTR2.m', 90)" style="font-weight:bold">TestQNTR2</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/TestQNTR2.m',90,0)">line 90</a>)] 
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt256
+costruito operatore di massa
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('hist1', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/hist1.m', 66)" style="font-weight:bold">hist1</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/hist1.m',66,0)">line 66</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('costoMI2', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/costoMI2.m', 21)" style="font-weight:bold">costoMI2</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/costoMI2.m',21,0)">line 21</a>)
+[h_joint,Dh_joint,hT,DhT,hR]=hist1(Ta,R,gradTa);
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('costo', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/costo.m', 11)" style="font-weight:bold">costo</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/costo.m',11,0)">line 11</a>)
+        [J,DJ,HJ] = costoMI2(a);
+
+
+In lineSearch
+
+In lineSearch
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminusub', '/Applications/MATLAB_R2016b.app/toolbox/optim/optim/private/fminusub.m', 189)" style="font-weight:bold">fminusub</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/optim/optim/private/fminusub.m',189,0)">line 189</a>)
+          lineSearch(funfcn,x,dir,f,dirDerivative, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminunc', '/Applications/MATLAB_R2016b.app/toolbox/optim/optim/fminunc.m', 437)" style="font-weight:bold">fminunc</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/optim/optim/fminunc.m',437,0)">line 437</a>)
+   [x,FVAL,GRAD,HESSIAN,EXITFLAG,OUTPUT] = fminusub(funfcn,x, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('TestQNTR2', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/TestQNTR2.m', 279)" style="font-weight:bold">TestQNTR2</a> (<a href="matla

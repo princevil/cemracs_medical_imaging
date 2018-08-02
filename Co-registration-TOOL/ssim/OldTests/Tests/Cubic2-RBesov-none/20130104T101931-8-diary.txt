@@ -1,0 +1,18 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 3
+Immagine = africasculpt256
+costruito operatore di massa
+Maximum number of iterations exceeded;
+   increase options.MaxIter.
+
+output = 
+
+       iterations: 101
+        funcCount: 102
+     cgiterations: 319
+    firstorderopt: 0.3613
+        algorithm: 'large-scale: trust-region Newton'
+          message: [1x67 char]
+
+CPU-time: 62658.5469

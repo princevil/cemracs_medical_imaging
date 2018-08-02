@@ -1,0 +1,46 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : LS
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt512
+costruito operatore di massa
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('vector2matrix', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/vector2matrix.m', 7)" style="font-weight:bold">vector2matrix</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/vector2matrix.m',7,0)">line 7</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gradiente', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/gradiente.m', 135)" style="font-weight:bold">gradiente</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/gradiente.m',135,0)">line 135</a>)
+haty = vector2matrix(haty,Li);
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('costoLS', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/costoLS.m', 7)" style="font-weight:bold">costoLS</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/costoLS.m',7,0)">line 7</a>)
+gradTa = gradiente(a,griglia);
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('costo', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/costo.m', 33)" style="font-weight:bold">costo</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/costo.m',33,0)">line 33</a>)
+[J,DJ,HJ]=costoLS(a);
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sfd', '/Applications/MATLAB_R2014b.app/toolbox/optim/optim/sfd.m', 51)" style="font-weight:bold">sfd</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2014b.app/toolbox/optim/optim/sfd.m',51,0)">line 51</a>)
+        [dummy,v(:)] = feval(funfcn{3},x,varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sfminbx', '/Applications/MATLAB_R2014b.app/toolbox/optim/optim/sfminbx.m', 308)" style="font-weight:bold">sfminbx</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2014b.app/toolbox/optim/optim/sfminbx.m',308,0)">line 308</a>)
+            newH = sfd(x,newgrad,Hstr,group,[],options.DiffMinChange,options.DiffMaxChange, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminunc', '/Applications/MATLAB_R2014b.app/toolbox/optim/optim/fminunc.m', 450)" style="font-weight:bold">fminunc</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2014b.app/toolbox/optim/optim/fminunc.m',450,0)">line 450</a>)
+   [x,FVAL,~,EXITFLAG,OUTPUT,GRAD,HESSIAN] = sfminbx(funfcn,x,l,u, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('TestMoon2', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/TestMoon2.m', 273)" style="font-weight:bold">TestMoon2</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/TestMoon2.m',273,0)">line 273</a>)
+ [a1,fval,exitflag,output] = fminunc(@costo,a0,options);
+
+} 
+TestQNTR2
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+[Warning: Directory already exists.] 
+[> In <a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/TestQNTR2.m',63,1)">TestQNTR2 at 63</a>] 
+
+stringa =
+
+20171107T174534
+

@@ -1,0 +1,52 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : MI
+[Warning: Name is nonexistent or not a directory: C] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m', 88)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m',88,0)">line 88</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('TestTR', '/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/TestTR.m', 79)" style="font-weight:bold">TestTR</a> (<a href="matlab: opentoline('/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/TestTR.m',79,0)">line 79</a>)] 
+[Warning: Name is nonexistent or not a directory:
+\Users\Silvia\Dropbox\bspline_tools_1_2\] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m', 88)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m',88,0)">line 88</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('TestTR', '/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/TestTR.m', 79)" style="font-weight:bold">TestTR</a> (<a href="matlab: opentoline('/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/TestTR.m',79,0)">line 79</a>)] 
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+K = 3 - Nsample = 32
+Immagine = africasculpt256
+costruito operatore di massa
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('hist1', '/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/hist1.m', 66)" style="font-weight:bold">hist1</a> (<a href="matlab: opentoline('/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/hist1.m',66,0)">line 66</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('costoMI2', '/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/costoMI2.m', 21)" style="font-weight:bold">costoMI2</a> (<a href="matlab: opentoline('/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/costoMI2.m',21,0)">line 21</a>)
+[h_joint,Dh_joint,hT,DhT,hR]=hist1(Ta,R,gradTa);
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('costo', '/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/costo.m', 11)" style="font-weight:bold">costo</a> (<a href="matlab: opentoline('/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/costo.m',11,0)">line 11</a>)
+        [J,DJ,HJ] = costoMI2(a);
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sfd', '/Applications/MATLAB_R2016b.app/toolbox/optim/optim/sfd.m', 51)" style="font-weight:bold">sfd</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/optim/optim/sfd.m',51,0)">line 51</a>)
+        [dummy,v(:)] = feval(funfcn{3},x,varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sfminbx', '/Applications/MATLAB_R2016b.app/toolbox/optim/optim/sfminbx.m', 153)" style="font-weight:bold">sfminbx</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/optim/optim/sfminbx.m',153,0)">line 153</a>)
+    H =
+    sfd(x,g,Hstr,group,[],options.DiffMinChange,options.DiffMaxChange,funfcn,varargin{:});
+    
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminunc', '/Applications/MATLAB_R2016b.app/toolbox/optim/optim/fminunc.m', 442)" style="font-weight:bold">fminunc</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/optim/optim/fminunc.m',442,0)">line 442</a>)
+   [x,FVAL,~,EXITFLAG,OUTPUT,GRAD,HESSIAN] = sfminbx(funfcn,x,l,u, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('TestTR', '/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/TestTR.m', 273)" style="font-weight:bold">TestTR</a> (<a href="matlab: opentoline('/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/TestTR.m',273,0)">line 273</a>)
+ [a1,fval,exitflag,output] = fminunc(@costo,a0,options);
+
+} 
+clear all
+TestTR
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+stringa =
+
+20180718T124116
+

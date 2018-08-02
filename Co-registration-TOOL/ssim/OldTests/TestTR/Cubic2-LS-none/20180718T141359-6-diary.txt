@@ -1,0 +1,57 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : LS
+warning: addpath: \Users\Silvia\Dropbox\bspline_tools_1_2\: No such file or directory
+warning: called from
+    DebugOctave at line 86 column 1
+warning: addpath: C: No such file or directory
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+warning: Matlab-style short-circuit operation performed for operator &
+Immagine = africasculpt64
+costruito operatore di massa
+error: Invalid call to fminunc.  Correct usage is:
+
+ -- Function File: fminunc (FCN, X0)
+ -- Function File: fminunc (FCN, X0, OPTIONS)
+ -- Function File: [X, FVAL, INFO, OUTPUT, GRAD, HESS] = fminunc (FCN,
+          ...)
+error: called from
+    print_usage at line 90 column 5
+    fminunc at line 109 column 5
+    DebugOctave at line 294 column 27
+>> fminunc(@costo,a0)
+
+>> DebugOctave
+stringa = 20180718T152558

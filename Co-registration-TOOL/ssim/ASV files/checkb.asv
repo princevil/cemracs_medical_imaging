@@ -1,0 +1,15 @@
+function z = checkb(x,y)
+%UNTITLED Summary of this function goes here
+%   Detailed explanation goes here
+
+N=1;
+
+x = (N*x-floor(N*x))/N; y=(N*y - floor(N*y))/N;
+
+z =((x<.5)&(y<.5))|((x>.5)&(y>.5));
+
+min z
+max z
+
+end
+

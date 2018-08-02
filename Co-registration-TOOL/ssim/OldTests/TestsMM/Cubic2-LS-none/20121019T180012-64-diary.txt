@@ -1,0 +1,26 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : LS
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+{Error using <a href="matlab:helpUtils.errorDocCallback('ones')" style="font-weight:bold">ones</a>
+Maximum variable size allowed by the program is
+exceeded.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('quadgrid', 'C:\Users\Silvia\Dropbox\ssim\quadgrid.m', 7)" style="font-weight:bold">quadgrid</a> (<a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\quadgrid.m',7,0)">line 7</a>)
+griglia.j = (J+1)*ones(griglia.npoints,1);
+
+Error in <a href="matlab:helpUtils.errorDocCallback('NewTest', 'C:\Users\Silvia\Dropbox\ssim\NewTest.m', 102)" style="font-weight:bold">NewTest</a> (<a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\NewTest.m',102,0)">line 102</a>)
+griglia = quadgrid(j); % "pixel"
+} 
+NewTest
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+[Warning: Directory already exists.] 
+[> In <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\NewTest.m',60,1)">NewTest at 60</a>] 
+
+stringa =
+
+20121019T180059
+

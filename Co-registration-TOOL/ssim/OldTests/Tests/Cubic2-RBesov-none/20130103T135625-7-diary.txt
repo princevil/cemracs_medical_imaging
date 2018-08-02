@@ -1,0 +1,17 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 1 - j0 = 1 - J = 2
+Immagine = africasculpt128
+costruito operatore di massa
+Optimization terminated: norm of the current step is less than OPTIONS.TolX.
+
+output = 
+
+       iterations: 52
+        funcCount: 53
+     cgiterations: 399
+    firstorderopt: 0.0032
+        algorithm: 'large-scale: trust-region Newton'
+          message: 'Optimization terminated: norm of the current step is less than OPTIONS.TolX.'
+
+CPU-time: 851.3281

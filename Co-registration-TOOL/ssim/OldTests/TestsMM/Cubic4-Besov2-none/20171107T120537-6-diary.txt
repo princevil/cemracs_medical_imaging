@@ -1,0 +1,66 @@
+Interpolation : Cubic - nrefine = 4
+Cost function : Besov
+[Warning: Name is nonexistent or not a directory: C] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m', 88)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m',88,0)">line 88</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Test_Besov', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/Test_Besov.m', 79)" style="font-weight:bold">Test_Besov</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/Test_Besov.m',79,0)">line 79</a>)] 
+[Warning: Name is nonexistent or not a directory: \Users\Silvia\Dropbox\bspline_tools_1_2\] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m', 88)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m',88,0)">line 88</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Test_Besov', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/Test_Besov.m', 79)" style="font-weight:bold">Test_Besov</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/Test_Besov.m',79,0)">line 79</a>)] 
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt64
+costruito operatore di massa
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_possible','CSHelpWindow');">Local minimum possible</a>.
+
+fminunc stopped because the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'norm_current_step','CSHelpWindow');">size of the current step</a> is less than
+the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'step_size_tol','CSHelpWindow');">step size tolerance</a>.
+
+<<a href = "matlab: createExitMsg('fminusub',2.000000e+00,true,true,'fminunc',6.677432e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_possible','CSHelpWindow');">Local minimum possible</a>.
+
+fminunc stopped because it cannot decrease the objective function
+along the current <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'search_direction','CSHelpWindow');">search direction</a>.
+
+<<a href = "matlab: createExitMsg('fminusub',5.000000e+00,true,true,'fminunc',0.000000e+00,'',0.000000e+00,0.000000e+00,'',0.000000e+00,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+____________________________________________________________
+   CheckGradients Information
+
+Objective function derivatives:
+Maximum relative difference between supplied 
+and finite-difference derivatives = 0.00890961.
+  Supplied derivative element (14,1):     -0.0921351
+  Finite-difference derivative element (14,1): -0.101045
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'checkgradients_failed','CSHelpWindow');">CheckGradients failed</a>.
+
+____________________________________________________________
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('validateFirstDerivatives', '/Applications/MATLAB_R2016b.app/toolbox/shared/optimlib/validateFirstDerivatives.m', 111)" style="font-weight:bold">validateFirstDerivatives</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/shared/optimlib/validateFirstDerivatives.m',111,0)">line 111</a>)
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'checkgradients_failed','CSHelpWindow');">CheckGradients failed</a>:
+Supplied and forward finite-difference derivatives not within 1e-06.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminunc', '/Applications/MATLAB_R2016b.app/toolbox/optim/optim/fminunc.m', 431)" style="font-weight:bold">fminunc</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/optim/optim/fminunc.m',431,0)">line 431</a>)
+    validateFirstDerivatives(funfcn,confcn,XOUT,-Inf(sizes.nVar,1), ...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Test_Besov', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/Test_Besov.m', 278)" style="font-weight:bold">Test_Besov</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/Test_Besov.m',278,0)">line 278</a>)
+ [a1,fval,exitflag,outputTR] = fminunc(@costo,a0,options);
+
+} 
+Test_Besov
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Test_Besov', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/Test_Besov.m', 60)" style="font-weight:bold">Test_Besov</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/Test_Besov.m',60,0)">line 60</a>)] 
+
+stringa =
+
+20171107T120645
+

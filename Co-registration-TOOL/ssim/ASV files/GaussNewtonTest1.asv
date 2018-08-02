@@ -1,0 +1,19 @@
+griglia = uniform2d(5,5);
+
+R = reference(griglia.x,griglia.y);
+
+N = 2;
+k = 0;
+a = [.00001;-.200001];
+Ta = deforma(a,griglia);
+for i = 1:15000
+    
+    gradTa = gradiente(a,griglia);
+    
+    
+    
+    b = M\f';
+    a = a-b;
+    res = sqrt(b'*b)
+    if (res<=1e-6) disp(['Urrah! - iterazione ',num2str(i)]); break, end
+end

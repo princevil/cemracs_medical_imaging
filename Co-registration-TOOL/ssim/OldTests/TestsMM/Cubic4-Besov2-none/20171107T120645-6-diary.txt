@@ -1,0 +1,68 @@
+Interpolation : Cubic - nrefine = 4
+Cost function : Besov
+[Warning: Name is nonexistent or not a directory: C] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m', 88)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m',88,0)">line 88</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Test_Besov', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/Test_Besov.m', 79)" style="font-weight:bold">Test_Besov</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/Test_Besov.m',79,0)">line 79</a>)] 
+[Warning: Name is nonexistent or not a directory: \Users\Silvia\Dropbox\bspline_tools_1_2\] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m', 88)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m',88,0)">line 88</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Test_Besov', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/Test_Besov.m', 79)" style="font-weight:bold">Test_Besov</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/Test_Besov.m',79,0)">line 79</a>)] 
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt64
+costruito operatore di massa
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_possible','CSHelpWindow');">Local minimum possible</a>.
+
+fminunc stopped because the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'norm_current_step','CSHelpWindow');">size of the current step</a> is less than
+the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'step_size_tol','CSHelpWindow');">step size tolerance</a>.
+
+<<a href = "matlab: createExitMsg('fminusub',2.000000e+00,true,true,'fminunc',6.677432e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_possible','CSHelpWindow');">Local minimum possible</a>.
+
+fminunc stopped because it cannot decrease the objective function
+along the current <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'search_direction','CSHelpWindow');">search direction</a>.
+
+<<a href = "matlab: createExitMsg('fminusub',5.000000e+00,true,true,'fminunc',0.000000e+00,'',0.000000e+00,0.000000e+00,'',0.000000e+00,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_possible','CSHelpWindow');">Local minimum possible</a>.
+
+fminunc stopped because the final change in function value relative to 
+its initial value is less than the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'function_tolerance','CSHelpWindow');">function tolerance</a>.
+
+<<a href = "matlab: createExitMsg('sfminle',3.000000e+00,true,true,'fminunc',4.655527e-07,'selected',1.000000e-06,0.000000e+00,'',0.000000e+00,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Quasi Newton:
+
+outputQN = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+       iterations: 130
+        funcCount: 169
+         stepsize: 1.3892e-04
+     lssteplength: 0.1058
+    firstorderopt: 0.0095
+        algorithm: 'quasi-newton'
+          message: 'Local minimum possible.'
+
+Trust Region
+
+outputTR = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+         iterations: 23
+          funcCount: 24
+           stepsize: 0.0015
+       cgiterations: 276
+      firstorderopt: 6.3874e-04
+          algorithm: 'trust-region'
+            message: 'Local minimum possible.'
+    constrviolation: []
+
+Percentuale QN - TR = 0.146 - 0.854
+CPU-time: 353.22

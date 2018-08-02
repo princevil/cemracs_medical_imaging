@@ -1,0 +1,17 @@
+Laboratory tests
+Name;Value;UoM
+VES;26.0;mm/h
+PCR;0.9;mg/dL
+Rheumatoid Factor;5.0;UI/mL
+Antibody ANTICCP;1.3;U/mL
+Uricemia;NaN;mg/dL
+
+Pathology Activity
+Name;Value;UoM
+Disease duration;120.0;months
+Joints tender;NaN;
+Joints swallen;NaN;
+VAS;25.0;
+DAS44;NaN;
+DAS28;NaN;
+DAS28PCR;1.31;

@@ -1,0 +1,28 @@
+Interpolation : AI - nrefine = 3
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt256
+costruito operatore di massa
+Optimization terminated: relative function value changing by less than OPTIONS.TolFun.
+
+output = 
+
+       iterations: 94
+        funcCount: 95
+     cgiterations: 377
+    firstorderopt: 0.0022
+        algorithm: 'large-scale: trust-region Newton'
+          message: 'Optimization terminated: relative function value changing by less than OPTIONS.TolFun.'
+
+CPU-time: 9549.9219
+Costo least square = 0.00023545
+Costo least square normalizzato = 0.00023545
+Costo SSIM (p=1) = 0.020799
+Costo SSIM (p=1.01) = 0.020826
+Costo SSIM (p=1.5) = 0.020298
+Costo SSIM (p=2) = 0.020238
+Costo SSIM (p=3) = 0.02023
+Costo SSIM (p=10) = 0.020229
+Costo HVS = 0.00017676
+Costo Besov = 0.021698
+Costo MI = -2.5737

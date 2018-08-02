@@ -1,0 +1,38 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt64
+costruito operatore di massa
+{??? Operation terminated by user during ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\wavelet\wavelet\upsconv2.m',63,0)">upsconv2>upsconv2ONE at 63</a>
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\wavelet\wavelet\upsconv2.m',42,0)">upsconv2 at 42</a>
+    y = upsconv2ONE(x);
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\wavelet\wavelet\idwt2.m',93,0)">idwt2 at 93</a>
+x = upsconv2(a,{Lo_R,Lo_R},sx,dwtEXTM,shift)+ ... % Approximation.
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\wavelet\wavelet\appcoef2.m',63,0)">appcoef2 at 63</a>
+    a = idwt2(a,h,v,d,Lo_R,Hi_R,s(rm-p,:));
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\wavelet\wavelet\waverec2.m',34,0)">waverec2 at 34</a>
+x = appcoef2(c,s,varargin{:},0);
+
+In ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\costoRBesov.m',58,0)">costoRBesov at 58</a>
+R2=waverec2(R2,SR,'haar');
+
+In ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\costo.m',7,0)">costo at 7</a>
+        [J,DJ,HJ] = costoRBesov(a);
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\optim\optim\sfd.m',50,0)">sfd at 50</a>
+        [dummy,v(:)] = feval(funfcn{3},x,varargin{:});
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\optim\optim\sfminbx.m',334,0)">sfminbx at 334</a>
+            newH = sfd(x,newgrad,Hstr,group,[],DiffMinChange,DiffMaxChange, ...
+
+In ==> <a href="matlab: opentoline('C:\Program Files\MATLAB\R2008b\toolbox\optim\optim\fminunc.m',377,0)">fminunc at 377</a>
+   [x,FVAL,LAMBDA,EXITFLAG,OUTPUT,GRAD,HESSIAN] = sfminbx(funfcn,x,l,u, ...
+
+In ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\TestML.m',276,0)">TestML at 276</a>
+ [a1,fval,exitflag,output] = fminunc(@costo,a0,options);
+} 
+diary off

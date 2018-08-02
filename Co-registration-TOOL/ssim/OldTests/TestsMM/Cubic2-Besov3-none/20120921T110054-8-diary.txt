@@ -1,0 +1,32 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : Besov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt256
+costruito operatore di massa
+Optimization cannot make further progress:
+ relative change in x less than options.TolX.
+Optimization terminated: norm of the current step is less than OPTIONS.TolX.
+Quasi Newton:
+
+outputQN = 
+
+       iterations: 165
+        funcCount: 240
+         stepsize: 0.2066
+    firstorderopt: 8.3109e-004
+        algorithm: 'medium-scale: Quasi-Newton line search'
+          message: [1x88 char]
+
+Trust Region
+
+outputTR = 
+
+       iterations: 5
+        funcCount: 6
+     cgiterations: 9
+    firstorderopt: 7.2807e-004
+        algorithm: 'large-scale: trust-region Newton'
+          message: 'Optimization terminated: norm of the current step is less than OPTIONS.TolX.'
+
+Percentuale QN - TR = 0.43628 - 0.56372
+CPU-time: 660.8438

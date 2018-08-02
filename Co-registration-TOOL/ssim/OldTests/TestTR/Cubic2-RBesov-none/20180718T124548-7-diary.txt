@@ -1,0 +1,49 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : RBesov
+[Warning: Name is nonexistent or not a directory: C] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m', 88)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m',88,0)">line 88</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('TestTR', '/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/TestTR.m', 82)" style="font-weight:bold">TestTR</a> (<a href="matlab: opentoline('/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/TestTR.m',82,0)">line 82</a>)] 
+[Warning: Name is nonexistent or not a directory:
+\Users\Silvia\Dropbox\bspline_tools_1_2\] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', '/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m', 88)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/general/addpath.m',88,0)">line 88</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('TestTR', '/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/TestTR.m', 82)" style="font-weight:bold">TestTR</a> (<a href="matlab: opentoline('/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/TestTR.m',82,0)">line 82</a>)] 
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt128
+costruito operatore di massa
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('upsconv2', '/Applications/MATLAB_R2016b.app/toolbox/wavelet/wavelet/upsconv2.m', 31)" style="font-weight:bold">upsconv2</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/wavelet/wavelet/upsconv2.m',31,0)">line 31</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('idwt2', '/Applications/MATLAB_R2016b.app/toolbox/wavelet/wavelet/idwt2.m', 91)" style="font-weight:bold">idwt2</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/wavelet/wavelet/idwt2.m',91,0)">line 91</a>)
+    upsconv2(v,{Lo_R,Hi_R},sx,dwtEXTM,shift)+ ... % Vertical Detail.
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('appcoef2', '/Applications/MATLAB_R2016b.app/toolbox/wavelet/wavelet/appcoef2.m', 58)" style="font-weight:bold">appcoef2</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/wavelet/wavelet/appcoef2.m',58,0)">line 58</a>)
+    a = idwt2(a,h,v,d,Lo_R,Hi_R,s(rm-p,:));
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('waverec2', '/Applications/MATLAB_R2016b.app/toolbox/wavelet/wavelet/waverec2.m', 29)" style="font-weight:bold">waverec2</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/wavelet/wavelet/waverec2.m',29,0)">line 29</a>)
+x = appcoef2(c,s,varargin{:},0);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('costoRBesov', '/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/costoRBesov.m', 56)" style="font-weight:bold">costoRBesov</a> (<a href="matlab: opentoline('/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/costoRBesov.m',56,0)">line 56</a>)
+Ta2 =  waverec2(Ta2,ST,wname);
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('costo', '/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/costo.m', 7)" style="font-weight:bold">costo</a> (<a href="matlab: opentoline('/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/costo.m',7,0)">line 7</a>)
+        [J,DJ,HJ] = costoRBesov(a);
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sfd', '/Applications/MATLAB_R2016b.app/toolbox/optim/optim/sfd.m', 51)" style="font-weight:bold">sfd</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/optim/optim/sfd.m',51,0)">line 51</a>)
+        [dummy,v(:)] = feval(funfcn{3},x,varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sfminbx', '/Applications/MATLAB_R2016b.app/toolbox/optim/optim/sfminbx.m', 308)" style="font-weight:bold">sfminbx</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/optim/optim/sfminbx.m',308,0)">line 308</a>)
+            newH =
+            sfd(x,newgrad,Hstr,group,[],options.DiffMinChange,options.DiffMaxChange,
+            ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminunc', '/Applications/MATLAB_R2016b.app/toolbox/optim/optim/fminunc.m', 442)" style="font-weight:bold">fminunc</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/optim/optim/fminunc.m',442,0)">line 442</a>)
+   [x,FVAL,~,EXITFLAG,OUTPUT,GRAD,HESSIAN] = sfminbx(funfcn,x,l,u, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('TestTR', '/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/TestTR.m', 276)" style="font-weight:bold">TestTR</a> (<a href="matlab: opentoline('/Users/silviabertoluzza/Dropbox/PROGRAMMI/CEMRACS18/ssim/TestTR.m',276,0)">line 276</a>)
+ [a1,fval,exitflag,output] = fminunc(@costo,a0,options);
+
+} 

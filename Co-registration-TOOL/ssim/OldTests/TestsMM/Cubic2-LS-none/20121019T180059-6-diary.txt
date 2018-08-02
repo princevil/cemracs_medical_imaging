@@ -1,0 +1,41 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : LS
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt64
+costruito operatore di massa
+____________________________________________________________
+   DerivativeCheck Information
+
+Objective function derivatives:
+Maximum relative difference between user-supplied 
+and finite-difference derivatives = 0.00126516.
+  User-supplied derivative element (8,1):     -0.0655187
+  Finite-difference derivative element (8,1): -0.0667839
+____________________________________________________________
+
+{Error using <a href="matlab:helpUtils.errorDocCallback('validateFirstDerivatives', 'C:\Program Files\MATLAB\R2012b\toolbox\shared\optimlib\validateFirstDerivatives.m', 96)" style="font-weight:bold">validateFirstDerivatives</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2012b\toolbox\shared\optimlib\validateFirstDerivatives.m',96,0)">line 96</a>)
+DerivativeCheck failed:
+User-supplied and forward finite-difference
+derivatives do not match within 1e-06 relative
+tolerance.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('fminunc', 'C:\Program Files\MATLAB\R2012b\toolbox\optim\optim\fminunc.m', 410)" style="font-weight:bold">fminunc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2012b\toolbox\optim\optim\fminunc.m',410,0)">line 410</a>)
+    validateFirstDerivatives(funfcn,confcn,XOUT,-Inf(sizes.nVar,1),
+    ...
+
+Error in <a href="matlab:helpUtils.errorDocCallback('NewTest', 'C:\Users\Silvia\Dropbox\ssim\NewTest.m', 276)" style="font-weight:bold">NewTest</a> (<a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\NewTest.m',276,0)">line 276</a>)
+ [a1,fval,exitflag,outputTR] =
+ fminunc(@costo,a0,options);
+} 
+helpUtils.errorDocCallback('validateFirstDerivatives', 'C:\Program Files\MATLAB\R2012b\toolbox\shared\optimlib\validateFirstDerivatives.m', 96)
+NewTest
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+stringa =
+
+20121019T180321
+

@@ -1,0 +1,98 @@
+Interpolation : AI - nrefine = 2
+Cost function : HVS
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt512
+costruito operatore di massa
+____________________________________________________________
+   DerivativeCheck Information
+
+Objective function derivatives:
+Maximum relative difference between user-supplied 
+and finite-difference derivatives = 0.000372298.
+  User-supplied derivative element (14,1):     -0.016195
+  Finite-difference derivative element (14,1): -0.0158227
+____________________________________________________________
+
+{Error using <a href="matlab:helpUtils.errorDocCallback('validateFirstDerivatives', 'C:\Program Files\MATLAB\R2012b\toolbox\shared\optimlib\validateFirstDerivatives.m', 96)" style="font-weight:bold">validateFirstDerivatives</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2012b\toolbox\shared\optimlib\validateFirstDerivatives.m',96,0)">line 96</a>)
+DerivativeCheck failed:
+User-supplied and forward finite-difference derivatives do not match
+within 1e-06 relative tolerance.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('fminunc', 'C:\Program Files\MATLAB\R2012b\toolbox\optim\optim\fminunc.m', 410)" style="font-weight:bold">fminunc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2012b\toolbox\optim\optim\fminunc.m',410,0)">line 410</a>)
+    validateFirstDerivatives(funfcn,confcn,XOUT,-Inf(sizes.nVar,1), ...
+
+Error in <a href="matlab:helpUtils.errorDocCallback('NewTest2', 'C:\Users\Silvia\Dropbox\ssim\NewTest2.m', 276)" style="font-weight:bold">NewTest2</a> (<a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\NewTest2.m',276,0)">line 276</a>)
+ [a1,fval,exitflag,output] = fminunc(@costo,a0,options);
+} 
+sol1d(0)
+
+ans =
+
+   -0.1753
+
+sol1d(1)
+
+ans =
+
+   -0.1753
+
+cosh(2)+cos(2)
+
+ans =
+
+    3.3460
+
+1/ans
+
+ans =
+
+    0.2989
+
+sol1d(1)
+
+ans =
+
+   -0.1753
+
+sol1d(1)
+
+ans =
+
+   -0.1753
+
+cos(0)
+
+ans =
+
+     1
+
+cos(1)
+
+ans =
+
+    0.5403
+
+cosh(1)
+
+ans =
+
+    1.5431
+
+cosh(1)+cos(1)
+
+ans =
+
+    2.0834
+
+cos(2)
+
+ans =
+
+   -0.4161
+
+cosh(2)
+
+ans =
+
+    3.7622
+

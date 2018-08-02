@@ -1,0 +1,37 @@
+Interpolation : MI - nrefine = 2
+Cost function : LS
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt256
+costruito operatore di massa
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('griddedInterpolant')" style="font-weight:bold">griddedInterpolant</a>
+Grid is improperly defined.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('interp2>makegriddedinterp', '/Applications/MATLAB_R2016b.app/toolbox/matlab/polyfun/interp2.m', 229)" style="font-weight:bold">interp2>makegriddedinterp</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/polyfun/interp2.m',229,0)">line 229</a>)
+    F = griddedInterpolant(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('interp2', '/Applications/MATLAB_R2016b.app/toolbox/matlab/polyfun/interp2.m', 137)" style="font-weight:bold">interp2</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/polyfun/interp2.m',137,0)">line 137</a>)
+        F = makegriddedinterp(X, Y, V, method,extrap);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('deforma', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/deforma.m', 105)" style="font-weight:bold">deforma</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/deforma.m',105,0)">line 105</a>)
+Ta = interp2(Xi,Yi,Ti,hatx,haty,'cubic');
+
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('costoLS', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/costoLS.m', 6)" style="font-weight:bold">costoLS</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/costoLS.m',6,0)">line 6</a>)
+Ta = deforma(a,griglia);
+
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('costo', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/costo.m', 33)" style="font-weight:bold">costo</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/costo.m',33,0)">line 33</a>)
+[J,DJ,HJ]=costoLS(a);
+
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminunc', '/Applications/MATLAB_R2016b.app/toolbox/optim/optim/fminunc.m', 276)" style="font-weight:bold">fminunc</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/optim/optim/fminunc.m',276,0)">line 276</a>)
+        [f,GRAD] = feval(funfcn{3},x,varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('TestMoon', '/Users/Silvia/Dropbox/PROGRAMMI/ssim/TestMoon.m', 272)" style="font-weight:bold">TestMoon</a> (<a href="matlab: opentoline('/Users/Silvia/Dropbox/PROGRAMMI/ssim/TestMoon.m',272,0)">line 272</a>)
+ [a1,fval,exitflag,output] = fminunc(@costo,a0,options);
+
+
+Caused by:
+    Failure in initial objective function evaluation. FMINUNC cannot continue.
+} 
+exit

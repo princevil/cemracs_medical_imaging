@@ -1,0 +1,154 @@
+20120918T115536-9-diary.txt
+
+Interpolation : Cubic - nrefine = 2
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt512
+costruito operatore di massa
+{??? Out of memory. Type HELP MEMORY for your options.
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\gradphi.m',14,0)">gradphi at 14</a>
+Dphi = zeros(griglia.npoints,N,2);
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\gradiente.m',17,0)">gradiente at 17</a>
+Dphi = gradphi(griglia);
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\costoRBesov.m',16,0)">costoRBesov at 16</a>
+gradTa = gradiente(a,griglia);
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\costo.m',7,0)">costo at 7</a>
+        [J,DJ,HJ] = costoRBesov(a);
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\TestML.m',254,0)">TestML at 254</a>
+c0 = costo(a0);
+} 
+TestML
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+stringa =
+
+20120918T115700
+
+
+
+20120918T115700-6-diary.txt
+
+Interpolation : Cubic - nrefine = 3
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt64
+costruito operatore di massa
+Optimization terminated: relative function value changing by less than OPTIONS.TolFun.
+
+output = 
+
+       iterations: 54
+        funcCount: 55
+     cgiterations: 444
+    firstorderopt: 0.0020
+        algorithm: 'large-scale: trust-region Newton'
+          message: 'Optimization terminated: relative function value changing by less than OPTIONS.TolFun.'
+
+CPU-time: 414.6719
+Costo least square = 0.00037648
+Costo least square normalizzato = 0.00037648
+Costo SSIM (p=1) = 0.025761
+Costo SSIM (p=1.01) = 0.025771
+Costo SSIM (p=1.5) = 0.025603
+Costo SSIM (p=2) = 0.025593
+Costo SSIM (p=3) = 0.025593
+Costo SSIM (p=10) = 0.025593
+Costo HVS = 0.00027024
+Costo Besov = 0.02744
+Costo MI = -2.5684
+
+
+20120918T120524-7-diary.txt
+
+Interpolation : Cubic - nrefine = 3
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt128
+costruito operatore di massa
+Optimization terminated: relative function value changing by less than OPTIONS.TolFun.
+
+output = 
+
+       iterations: 78
+        funcCount: 79
+     cgiterations: 499
+    firstorderopt: 4.1015e-004
+        algorithm: 'large-scale: trust-region Newton'
+          message: 'Optimization terminated: relative function value changing by less than OPTIONS.TolFun.'
+
+CPU-time: 1523.8906
+Costo least square = 0.00015226
+Costo least square normalizzato = 0.00015226
+Costo SSIM (p=1) = 0.016713
+Costo SSIM (p=1.01) = 0.016734
+Costo SSIM (p=1.5) = 0.016331
+Costo SSIM (p=2) = 0.016287
+Costo SSIM (p=3) = 0.01628
+Costo SSIM (p=10) = 0.01628
+Costo HVS = 0.00010348
+Costo Besov = 0.017449
+Costo MI = -2.5915
+
+
+20120918T123117-8-diary.txt
+
+Interpolation : Cubic - nrefine = 3
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt256
+costruito operatore di massa
+Optimization terminated: norm of the current step is less than OPTIONS.TolX.
+
+output = 
+
+       iterations: 28
+        funcCount: 29
+     cgiterations: 183
+    firstorderopt: 0.0186
+        algorithm: 'large-scale: trust-region Newton'
+          message: 'Optimization terminated: norm of the current step is less than OPTIONS.TolX.'
+
+CPU-time: 2873.7188
+Costo least square = 0.00016207
+Costo least square normalizzato = 0.00016207
+Costo SSIM (p=1) = 0.017135
+Costo SSIM (p=1.01) = 0.017152
+Costo SSIM (p=1.5) = 0.016828
+Costo SSIM (p=2) = 0.016797
+Costo SSIM (p=3) = 0.016793
+Costo SSIM (p=10) = 0.016793
+Costo HVS = 0.0001236
+Costo Besov = 0.018003
+Costo MI = -2.5876
+
+
+20120920T140311-9-diary.txt
+
+Interpolation : Cubic - nrefine = 3
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt512
+costruito operatore di massa
+Optimization terminated: norm of the current step is less than OPTIONS.TolX.
+
+output = 
+
+       iterations: 30
+        funcCount: 31
+     cgiterations: 222
+    firstorderopt: 0.0045
+        algorithm: 'large-scale: trust-region Newton'
+          message: 'Optimization terminated: norm of the current step is less than OPTIONS.TolX.'
+
+CPU-time: 10978.9916
+
+

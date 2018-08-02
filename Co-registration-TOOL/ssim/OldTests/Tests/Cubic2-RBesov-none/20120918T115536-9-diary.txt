@@ -1,0 +1,33 @@
+Interpolation : Cubic - nrefine = 2
+Cost function : RBesov
+Trasformazione: wavelet interpolanti - nw = 3 - j0 = 2 - J = 2
+Immagine = africasculpt512
+costruito operatore di massa
+{??? Out of memory. Type HELP MEMORY for your options.
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\gradphi.m',14,0)">gradphi at 14</a>
+Dphi = zeros(griglia.npoints,N,2);
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\gradiente.m',17,0)">gradiente at 17</a>
+Dphi = gradphi(griglia);
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\costoRBesov.m',16,0)">costoRBesov at 16</a>
+gradTa = gradiente(a,griglia);
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\costo.m',7,0)">costo at 7</a>
+        [J,DJ,HJ] = costoRBesov(a);
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Silvia\Dropbox\ssim\TestML.m',254,0)">TestML at 254</a>
+c0 = costo(a0);
+} 
+TestML
+                                         
+*****************************************
+**  DWT Extension Mode: Periodization  **
+*****************************************
+                                         
+
+stringa =
+
+20120918T115700
+
