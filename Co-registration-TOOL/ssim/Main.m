@@ -6,12 +6,12 @@ addpath('../WaveletBases')
 
 global spazio spazio_im griglia T R Xi Yi Ti Dxi Dyi Li Mass jmax AIbase
 global interp_type cost_function
-global wname maxlev % wavelet to be used for the Besov norm computation
+global wname maxlev% wavelet da usare per il calcolo della norma Besov.
 global hvs
 global besov_q;
 global Nsample Kmi;
 
- startmode = 'zero'; % nodal base
+ startmode = 'zero'; % base nodale
 % startmode = 'multiscale'; 
 
 
@@ -72,7 +72,7 @@ end
 
 mkdir(directory);
 nome_immagine = 'africasculpt';
-% nome_immagine = 'facet';
+% nome_immagine = 'facet'; it is the name of the image file
 
 stringa = datestr(now,30)
 stringa = [stringa,'-',num2str(j)];
@@ -93,12 +93,12 @@ disp(['Cost function : ',cost_function]);
 addpath('C:\Users\Silvia\Dropbox\bspline_tools_1_2\'); 
 
 figure(1); clf
-%jmax: risoluzione con cui si valuta PHI
+% jmax: resolution to evaluate PHI
 
 
 
 
-% Initialization of the transformation space
+% Initialization of the space of transformations
 jmax=9;
 disp(['Trasformazione: wavelet interpolanti - nw = ',num2str(nw),' - j0 = ',num2str(j0),...
     ' - J = ',num2str(jwi)]);
@@ -107,9 +107,9 @@ if(strcmp(cost_function,'MI'))
 end
 
 base=start(nw,jmax);
-spazio = uniform2d(j0,jwi); % "trasformazioni"
-griglia = quadgrid(j); % "pixel"
-%% Operatore che valuta le funzioni di spazio nei punti di griglia 
+spazio = uniform2d(j0,jwi); % "trasformazioni"; transf. grid
+griglia = quadgrid(j); % "pixel"; pixel grid
+% Operator evaluating space functions onto grid nodes
 Mass = operator2d(spazio,griglia,[1 0 0;0 0 0;0 0 0],base); % only relevant in a multiscale case
 disp('costruito operatore di massa');
 
@@ -117,7 +117,7 @@ disp('costruito operatore di massa');
 
 
 
-% griglia su cui vive l'immagine
+% grid which the image is defined on
 
 h = 1/2.^j;
 
@@ -127,10 +127,10 @@ nome_reference = ['Images/',nome_immagine,num2str(2^j),'_T.jpg'];
 
 
 
-%% COSTRUZIONE DEL RUMORE
+%% CONSTRUCTION OF NOISE
 
 
-%% INIZIALIZZAZIONE DELL'IMMAGINE
+%% INITIALIZATION OF THE IMAGE
 disp(['Immagine = ',nome_immagine,num2str(2^j)]);
 R = imread(nome_reference);
 
@@ -140,12 +140,12 @@ T = imread(nome_template);
 R = double(R)/256;T = double(T)/256;
 
 
-% Dati per il passaggio di T da matrice a vettore;
-% questo e' un' escamotage, sicuramente si puo' fare in altro modo
+% Data for describing T from a matrix to a vector;
+% This is not a mandatory trick: one can surely do better than this.
 
 % matrix2vector(T,Li)=reshape(T',Np,Np); 
 % vector2matrix=reshape(T,Np^2,1)';
-% (Np = nro di punti in ciascuna delle 2 direzioni
+% (Np = #points in any of two directions)
 
 
 xt=(h/2:h:1-h/2);
@@ -153,14 +153,13 @@ yt=(h/2:h:1-h/2);
 [Xt,Yt]=meshgrid(xt,yt);
 Li = griddata(griglia.x,griglia.y,(1:griglia.npoints)',Xt,Yt);
 Li = round(Li);
-%% Essenzialmente qui Li mi numera i punti 
+%% Here Li basically counts the grid points
 
 
 N = 2^j;
 % Xi = Xt; Yi = Yt; Ti = T;
 
-
-%% Costruzione dei dati per l'interpolazione Spline o Bicubica
+%% Data construction for the Spline or Bi-cubic interpolation
 if(strcmp(interp_type,'Spline')|strcmp(interp_type,'Cubic'))
   
     hf = h/(2.0^nrefine);
@@ -183,22 +182,21 @@ if(strcmp(interp_type,'Spline')|strcmp(interp_type,'Cubic'))
 
 end
 
-
-%% Costruzione dei dati per l'interpolazione AI   
+ 
+%% Data construction for the AI interpolation
 if (strcmp(interp_type,'AI'))
     
     AIbase=AIstart(D,jmax);
-    AIspace = uniformAIspace2d(j,D); %questo ??? lo spazio che rappresenta l'immagine con l'estensione periodica
-
-    % Dati per il passaggio di T da matrice a vettore;
-    % questo e' un' escamotage, sicuramente si puo' fare in altro modo
+    AIspace = uniformAIspace2d(j,D); %This is the space which represents
+                                     %the image with periodic extension.
+    % Data for the describing T from a matrix to vector;
+    % Again: one can do better than this.
 
 
     % Xi = Xt; Yi = Yt; Ti = T;
 
-
-    % Costruzione dei dati per la costruzione della funzione di costo e del gradiente.
-    % Estensione periodica di T
+    % Construction for the cost function and its gradient
+    % Periodic extension of T
 
     Te = [T(:,N-D+1:N), T, T(:,1:D)]; 
     Te = [Te(N-D+1:N,:); Te; Te(1:D,:)];
@@ -213,7 +211,7 @@ if (strcmp(interp_type,'AI'))
     Dyi = DA*Te'*A';
     Dxi = A*Te'*DA';
 
-    % Te ??? il vettore in AIspace che corrisponde a T
+    % Te is the vector in AIspace corrensponding to T
 
     cgrid = uniform2d(j+nrefine,j+nrefine);
 
@@ -227,7 +225,7 @@ end
 
 #{
 if(strcmp(interp_type,'BSplineP'))
-%% Costruzione dei dati per l'interpolazione BSpline Periodica
+%% Data contruction for the periodic BSpline interpolation
     disp('costruzione dati interpolazione Bspline periodica');
     hf = h/(2.0^nrefine);
     kxe =[-2:2^j+2];
